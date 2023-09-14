@@ -21,9 +21,9 @@ For this, we will need to use the **UNUserNotificationCenter**
             }
             
             if success {
-                print("ALLOW BY USER")
+                print("ALLOWED BY USER")
             } else {
-                print("DENY BY USER")
+                print("DENIED BY USER")
             }
         }
     }
