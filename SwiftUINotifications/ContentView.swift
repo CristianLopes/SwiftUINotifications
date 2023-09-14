@@ -10,13 +10,43 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button(action: {
+                NotificationManager.instance.requestPermission()
+            }, label: {
+                Text("Request permission")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(.blue)
+                    .foregroundColor(.white)
+            })
+            
+            Button(action: {
+                NotificationManager.instance.scheduleNotification()
+            }, label: {
+                Text("Schedule a notification")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(.blue)
+                    .foregroundColor(.white)
+            })
+            
+            Button(action: {
+                NotificationManager.instance.cancelNotifications()
+            }, label: {
+                Text("Cancel notification")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(.red)
+                    .foregroundColor(.white)
+            })
         }
         .padding()
+        .onAppear(perform: {
+            UIApplication.shared.applicationIconBadgeNumber = 0
+        })
+        
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

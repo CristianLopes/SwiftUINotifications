@@ -11,6 +11,7 @@
 		49AAEB1F2AB2AC2100626ACF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAEB1E2AB2AC2100626ACF /* ContentView.swift */; };
 		49AAEB212AB2AC2200626ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AAEB202AB2AC2200626ACF /* Assets.xcassets */; };
 		49AAEB242AB2AC2200626ACF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AAEB232AB2AC2200626ACF /* Preview Assets.xcassets */; };
+		49AAEB2B2AB2AC7B00626ACF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAEB2A2AB2AC7B00626ACF /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		49AAEB1E2AB2AC2100626ACF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49AAEB202AB2AC2200626ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49AAEB232AB2AC2200626ACF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49AAEB2A2AB2AC7B00626ACF /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				49AAEB1E2AB2AC2100626ACF /* ContentView.swift */,
 				49AAEB202AB2AC2200626ACF /* Assets.xcassets */,
 				49AAEB222AB2AC2200626ACF /* Preview Content */,
+				49AAEB2A2AB2AC7B00626ACF /* NotificationManager.swift */,
 			);
 			path = SwiftUINotifications;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49AAEB2B2AB2AC7B00626ACF /* NotificationManager.swift in Sources */,
 				49AAEB1F2AB2AC2100626ACF /* ContentView.swift in Sources */,
 				49AAEB1D2AB2AC2100626ACF /* SwiftUINotificationsApp.swift in Sources */,
 			);
