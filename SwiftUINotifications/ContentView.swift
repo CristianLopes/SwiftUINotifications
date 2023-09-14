@@ -21,7 +21,7 @@ struct ContentView: View {
             })
             
             Button(action: {
-                NotificationManager.instance.scheduleNotification()
+                NotificationManager.instance.scheduleNotification(timeInterval: 5.0, repeats: false)
             }, label: {
                 Text("Schedule a notification")
                     .padding()

@@ -33,15 +33,16 @@ class NotificationManager {
         }
     }
     
-    func scheduleNotification() {
+    func scheduleNotification(timeInterval: TimeInterval, repeats: Bool) {
         
         let content = UNMutableNotificationContent()
-        content.title = "Stay tuned!"
-        content.subtitle = "It's time to win"
+        content.title = "Stay hungy, Stay Foolish"
+        content.body = "If today were the last day of your life, would you want to do what you are about to do today?"
         content.sound = .default
         content.badge = 1
+
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: repeats)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         
