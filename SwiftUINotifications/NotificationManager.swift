@@ -1,10 +1,3 @@
-//
-//  NotificationManager.swift
-//  SwiftUINotifications
-//
-//  Created by Cristian Cris on 13/09/23.
-//
-
 import Foundation
 import UserNotifications
 
@@ -26,14 +19,15 @@ class NotificationManager {
             }
             
             if success {
-                print("ALLOW BY USER")
+                print("ALLOWED BY USER")
             } else {
-                print("DENY BY USER")
+                print("DENIED BY USER")
             }
         }
     }
     
     func scheduleNotification(timeInterval: TimeInterval, repeats: Bool) {
+        
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: repeats)
         
         sendNotification(content: getNotificationContent(title: "Using TimeInterval"), trigger: trigger)
